@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deal Verdict — Black Friday 2026: 26 real deals, checked today</title>
+<meta name="description" content="Black Friday 2026 deal finder. 26 real deals at Amazon, Best Buy, Walmart and Target, each price checked on 27 Nov 2026 with its source, and a verdict on whether it is really a deal.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <div class="brand">
+      <div class="brand-mark">DV</div>
+      <div>
+        <h1>Deal Verdict</h1>
+        <p class="tagline">Black Friday 2026 &mdash; every price checked today, every deal judged.</p>
+      </div>
+    </div>
+    <div class="masthead-stats" id="masthead-stats">26 verified deals &middot; 4 stores</div>
+  </div>
+</header>
+
+<main id="app">
+  <section class="controls" aria-label="Search and filter deals">
+    <div class="controls-row">
+      <input id="search" type="search" placeholder="Search products, brands, stores&hellip;" aria-label="Search deals" autocomplete="off">
+      <select id="sort" aria-label="Sort deals">
+        <option value="saving">Sort: biggest saving ($)</option>
+        <option value="discount">Sort: biggest discount (%)</option>
+        <option value="price-asc">Sort: cheapest first</option>
+        <option value="price-desc">Sort: priciest first</option>
+      </select>
+      <select id="min-discount" aria-label="Minimum discount">
+        <option value="0">Any discount</option>
+        <option value="20">20% off or more</option>
+        <option value="40">40% off or more</option>
+        <option value="50">50% off or more</option>
+      </select>
+    </div>
+    <div class="chips" id="category-chips" aria-label="Filter by category"></div>
+    <div class="chips chips-stores" id="store-chips" aria-label="Filter by store"></div>
+    <p class="result-line" id="result-line"></p>
+  </section>
+
+  <section class="compare" id="compare" aria-label="Same deal at every store">
+    <h2>Same deal, every store &mdash; AirPods Pro 3</h2>
+    <p class="compare-note">One product, four prices. The cheapest store wins; the rest are shown so you never overpay.</p>
+    <ol class="compare-list" id="compare-list"></ol>
+  </section>
+
+  <section class="grid" id="grid" aria-live="polite"></section>
+
+  <section class="detail" id="detail" hidden></section>
+
+  <p class="empty" id="empty" hidden>No deals match that search. Try a different word, or clear the filters.</p>
+</main>
+
+<footer class="foot">
+  <h2>How these deals were checked</h2>
+  <p>Every deal on this page was found and checked by the maker on <strong>27 November 2026, 14:45 WIB</strong> (07:45 UTC), reading the price at the store or in a deals source that names the store. Each card names its source and its check time. Sale prices move all day on Black Friday &mdash; always confirm the price at checkout before you buy.</p>
+  <p>Sources used: 9to5Toys (25&ndash;26 Nov), Black Friday Deals Diary (26&ndash;27 Nov), TradingView / Benzinga (27 Nov, 05:34 UTC), Cashback Index (26 Nov). Links go to the store&rsquo;s own listing search for the exact product named.</p>
+  <p class="foot-small">Deal Verdict is an independent finder. It is not affiliated with Amazon, Best Buy, Walmart, Target or any brand shown. Prices in US dollars.</p>
+</footer>
+
+<script type="module" src="finder.js"></script>
+</body>
+</html>
